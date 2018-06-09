@@ -1,0 +1,51 @@
+
+
+
+
+<button (click)="goBack()">go back</button>
+
+<img src="{{team.crestUrl}}" width="200" height="200">	
+<div class="details" *ngIf="team">
+  
+  <h2>{{ team.name | uppercase }} Details</h2>
+  
+  <div style="font-size: 40px;"><span>Code: </span>{{team.code}}
+  <br/>
+  <span>Club:</span>{{team.shortName}}
+  <br/>
+  </div>
+
+<h2>Last match</h2>
+ <div class="parent">
+	<table id="leagueTable1">
+	<tr><th>Club</th><th>Result</th><th>Club</th>
+		</tr>
+				<tr  *ngFor="let fixtures of this.match?.fixtures">
+					<td><span> {{fixtures.homeTeamName}} </span></td>
+					<td><span> {{fixtures.result.goalsHomeTeam}} - {{fixtures.result.goalsAwayTeam}} </span></td>
+					
+					<td><span> {{fixtures.awayTeamName}} </span></td>
+				</tr>	
+		
+	</table>
+
+</div>
+<br/>
+<h2> Last 5 Match </h2>
+<div id="ParentDiv">
+	<table id="leagueTable">
+	 <tr><th>Club</th><th>Result</th><th>Club</th>
+		</tr>
+				<tr  *ngFor="let fixtures of this.match5?.fixtures">
+					<td><span> {{fixtures.homeTeamName}} </span></td>
+					<td><span> {{fixtures.result.goalsHomeTeam}} - {{fixtures.result.goalsAwayTeam}} </span></td>
+					
+					<td><span> {{fixtures.awayTeamName}} </span></td>
+				</tr>	
+		
+	</table>
+</div>
+<a routerLink = "matches/{{team.id}}" style="font-size: 20px;">View ALL Matches</a>
+
+
+ 

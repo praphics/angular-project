@@ -1,0 +1,66 @@
+/* AppComponent's private CSS styles */
+p {
+  font-size: 100em;
+}
+h1 {
+  font-size: 1.2em;
+  color: #999;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.navbar
+{
+  overflow: hidden;
+  background-color: #333;
+  width: 90%;
+  float: right;
+  position: relative;
+  margin-top: -60px;
+  margin-bottom: 25px;
+
+}
+.navbar a {
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: inherit;
+  color: white;
+  float:left;
+  font-size: 25px;
+}
+
+.navbar a:hover {
+  
+  background-color: #4CAF50;
+}
+.navbar a.active {
+  color: #039be5;
+}
+
+.banner{
+  width: 10%;
+  height: 100px;
+  position: static;
+  margin-top: -5px; 
+  
+}
+
+.banner a{
+  color: white;
+  text-decoration: none;
+}
+
+.video{
+  width: 100%;
+  
+  margin-top:50px;
+  height: 500px;
+}
+
+
+

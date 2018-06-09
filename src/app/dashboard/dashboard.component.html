@@ -1,0 +1,55 @@
+<div class="videobox">
+<iframe class = "video" src="https://www.youtube.com/embed/WgfBGf_aShI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<h2> PREMIER LEAGUE 2017/2018 </h2>
+<div id="ParentDiv">
+	<table id="leagueTable">
+		<tr><th>#</th><th>CLUB</th><th>POINTS</th>
+		</tr>
+
+				<tr  *ngFor="let standing of this.standings?.standing">
+					<td><span> {{standing.position}} </span></td>
+					
+					<td><span class="name"> <img src="{{standing.crestURI}}" width="25" height="25"/>&nbsp;&nbsp;{{standing.teamName}} </span></td>
+					<td><span><b> {{standing.points}} </b></span></td>
+				</tr>	
+		
+	</table>
+
+</div>
+
+<div class="main">
+	<div class="first">
+		<iframe height="400" scrolling="no" src="https://talksport.com/talksport/rss_widget/" width="320"><a href="https://talksport.com/talksport/rss_widget/">Football premier league</a>on talkSPORT</iframe>
+	</div>
+	<div class="second">
+		<a href="https://www.fctables.com/players/mohamed_salah-288015/" title="Mohamed Salah stats"><img src="https://www.fctables.com/uploads/infographics/profil/288015/mohamed_salah.jpg" alt="Mohamed Salah stats" width="500" height="400" /></a>
+	</div>
+</div>
+
+<div class = footer>
+            
+            <div class="footer_text">
+            <p >Daily Score</p>
+            </div>
+            <div class="footer_lists">
+            	<a href="#">Contact US</a>
+            	<a href="#">Terms and Conditions</a>
+            	<a href="#">Privacy Policy</a>
+            	<a href="#">Live</a>
+            	<a href="#">Fantasy Football</a>
+            	
+            </div>
+        </div>
+
+
+
+
+
+ 
+
+ 
+
+
+

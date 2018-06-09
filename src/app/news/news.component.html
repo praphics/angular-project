@@ -1,0 +1,17 @@
+ 
+<button (click)="goBack()">go back</button>
+
+<div id="ParentDiv">
+	<table id="leagueTable">
+	 <tr><th>Club</th><th>Result</th><th>Club</th>
+		</tr>
+				<tr  *ngFor="let fixtures of this.fixtures?.fixtures">
+					<td><span> {{fixtures.homeTeamName}} </span></td>
+					<td><span> {{fixtures.result.goalsHomeTeam}} - {{fixtures.result.goalsAwayTeam}} </span></td>
+					
+					<td><span> {{fixtures.awayTeamName}} </span></td>
+				</tr>	
+		
+	</table>
+
+</div>

@@ -1,0 +1,22 @@
+
+<h2> PREMIER LEAGUE 2017/2018 </h2>
+<div id="ParentDiv">
+	<table id="leagueTable">
+		<tr><th>#</th><th>CLUB</th><th>MP</th><th>WON</th><th>DRAWN</th><th>LOST</th><th>GD</th><th>POINTS</th>
+		</tr>
+
+				<tr  *ngFor="let standing of this.standings?.standing">
+					<td><span> {{standing.position}} </span></td>
+					
+					<td><span class="name"> <img src="{{standing.crestURI}}" width="25" height="25"/>&nbsp;&nbsp;{{standing.teamName}} </span></td>
+					<td><span> {{standing.playedGames}} </span></td>
+					<td><span> {{standing.wins}} </span></td>
+					<td><span> {{standing.draws}} </span></td>
+					<td><span> {{standing.losses}} </span></td>
+					<td><span><b> {{standing.home.goals}} </b></span></td>
+					<td><span><b> {{standing.points}} </b></span></td>
+				</tr>	
+		
+	</table>
+
+</div>

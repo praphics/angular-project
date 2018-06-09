@@ -1,0 +1,29 @@
+table, th, td {
+	border: 1px solid #dddddd;
+	border-collapse: collapse;
+	text-align: center;
+	padding: 15px;
+	
+
+}
+table{
+	width:100%;
+	height: 0px;
+
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+img
+{
+	vertical-align: text-bottom;
+}
+
+.name
+{
+	float: left;
+	margin-left: 100px;
+}

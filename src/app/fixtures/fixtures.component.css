@@ -1,0 +1,50 @@
+ .heading{
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: skyblue;
+  float:center;
+  font-size: 25px;
+  margin-left: 150px;
+  width:73%;
+  margin-top: 50px;
+ }
+
+
+
+table, th, td {
+  border: 1px solid #dddddd;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 10px;
+ 
+  
+
+}
+table{
+  width:75%;
+  height: 0px;
+  
+  margin-left: 150px;
+
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+ a.selected:hover {
+  background-color: #BBD8DC !important;
+  color: white;
+}
+a:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  le
+  ft: .1em;
+}
+.selected {
+  background-color: #CFD8DC !important;
+  color: white;
+}

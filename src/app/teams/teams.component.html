@@ -1,0 +1,16 @@
+  
+
+
+<h1>Clubs</h1>
+
+<div class="main">
+ <ul> 
+  <li *ngFor="let teams of myTeams">
+     <a routerLink = "/detail/{{teams.id}}">
+     <img src="{{teams.crestUrl}}"><br><br><p class="badge">{{teams.name}}</p></a>
+   </li>
+  </ul> 
+  </div>
+
+
+ 
