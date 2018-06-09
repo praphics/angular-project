@@ -8,11 +8,11 @@
 		<tr><th>#</th><th>CLUB</th><th>POINTS</th>
 		</tr>
 
-				<tr  *ngFor="let standing of this.standings?.standing">
-					<td><span> {{standing.position}} </span></td>
+				<tr  *ngFor="let standings of this.standings?.standings">
+					<td><span> {{standings.position}} </span></td>
 					
-					<td><span class="name"> <img src="{{standing.crestURI}}" width="25" height="25"/>&nbsp;&nbsp;{{standing.teamName}} </span></td>
-					<td><span><b> {{standing.points}} </b></span></td>
+					<td><span class="name"> <img src="{{standings.crestURI}}" width="25" height="25"/>&nbsp;&nbsp;{{standings.teamName}} </span></td>
+					<td><span><b> {{standings.points}} </b></span></td>
 				</tr>	
 		
 	</table>
