@@ -5,16 +5,16 @@
 		<tr><th>#</th><th>CLUB</th><th>MP</th><th>WON</th><th>DRAWN</th><th>LOST</th><th>GD</th><th>POINTS</th>
 		</tr>
 
-				<tr  *ngFor="let standing of this.standings?.standing">
-					<td><span> {{standing.position}} </span></td>
+				<tr  *ngFor="let standings of this.standings">
+					<td><span> {{standings.position}} </span></td>
 					
-					<td><span class="name"> <img src="{{standing.crestURI}}" width="25" height="25"/>&nbsp;&nbsp;{{standing.teamName}} </span></td>
-					<td><span> {{standing.playedGames}} </span></td>
-					<td><span> {{standing.wins}} </span></td>
-					<td><span> {{standing.draws}} </span></td>
-					<td><span> {{standing.losses}} </span></td>
-					<td><span><b> {{standing.home.goals}} </b></span></td>
-					<td><span><b> {{standing.points}} </b></span></td>
+					<td><span class="name"> <img src="{{standings.crestURI}}" width="25" height="25"/>&nbsp;&nbsp;{{standings.teamName}} </span></td>
+					<td><span> {{standings.playedGames}} </span></td>
+					<td><span> {{standings.wins}} </span></td>
+					<td><span> {{standings.draws}} </span></td>
+					<td><span> {{standings.losses}} </span></td>
+					<td><span><b> {{standings.home.goals}} </b></span></td>
+					<td><span><b> {{standings.points}} </b></span></td>
 				</tr>	
 		
 	</table>

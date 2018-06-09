@@ -5,7 +5,7 @@
 	<table id="leagueTable">
 	 <tr><th>Club</th><th>Result</th><th>Club</th>
 		</tr>
-				<tr  *ngFor="let fixtures of this.fixtures?.fixtures">
+				<tr  *ngFor="let fixtures of this.fixtures">
 					<td><span> {{fixtures.homeTeamName}} </span></td>
 					<td><span> {{fixtures.result.goalsHomeTeam}} - {{fixtures.result.goalsAwayTeam}} </span></td>
 					

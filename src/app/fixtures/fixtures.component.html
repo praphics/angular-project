@@ -1,5 +1,5 @@
 <div class="heading">
- 	<a (click)="goPrevious()"><<< Previous</a><span style="margin-left: 27%; cursor: pointer;">Match Day {{matchday}}{{fixtures.date}}</span><a (click) = "goNext()" style="float: right; cursor: pointer;">Next >>></a>
+ 	<a (click)="goPrevious()"><<< Previous</a><span style="margin-left: 27%; cursor: pointer;">Match Day {{matchday}}</span><a (click) = "goNext()" style="float: right; cursor: pointer;">Next >>></a>
  </div>
  
 
@@ -7,7 +7,7 @@
 	<table id="leagueTable">
 	 <tr><th>Club</th><th>Result</th><th>Club</th>
 		</tr>
-				<tr  *ngFor="let fixtures of this.fixtures?.fixtures">
+				<tr  *ngFor="let fixtures of this.fixtures">
 					<td><span> {{fixtures.homeTeamName}} </span></td>
 					<td><span> {{fixtures.result.goalsHomeTeam}} - {{fixtures.result.goalsAwayTeam}} </span></td>
 					
